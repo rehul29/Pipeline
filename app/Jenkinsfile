@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage('two'){
+            steps{
+                echo "in app"
+            }
+        }
+    }
+}
