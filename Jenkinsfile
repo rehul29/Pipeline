@@ -10,8 +10,6 @@ pipeline{
         choice(name: 'CHOICE', choices: ['One', 'Two', 'Three'], description: 'Pick something')
 
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
-
-        file(name: "FILE", description: "Choose a file to upload")
     }
     stages{
         stage('dev'){
